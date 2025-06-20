@@ -1,0 +1,43 @@
+.books-wrapper {
+  min-height: 100vh;
+}
+
+.filters input,
+.filters select {
+  max-width: 300px;
+}
+
+.book-card {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.book-card img {
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 40px;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.btn-sm {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  padding: 5px 12px;
+}

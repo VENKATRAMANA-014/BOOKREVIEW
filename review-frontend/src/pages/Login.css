@@ -1,0 +1,13 @@
+.login-page {
+  height: 100vh;
+  background: linear-gradient(to right, #e3f2fd, #fff);
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
