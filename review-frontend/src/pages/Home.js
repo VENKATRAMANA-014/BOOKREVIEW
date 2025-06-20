@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import API from '../api/api'
 import { Link } from 'react-router-dom'
 import './Home.css'
-import Footer from './Footer'
+import Footer from '../components/Footer'
 
 function Home() {
   const [books, setBooks] = useState([])

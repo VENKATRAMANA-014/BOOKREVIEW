@@ -1,13 +1,46 @@
 .login-page {
   height: 100vh;
-  background: linear-gradient(to right, #e3f2fd, #fff);
+  background: linear-gradient(to right, #bbdefb, #e3f2fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
 
 .form-box {
   width: 100%;
   max-width: 400px;
-  padding: 30px;
-  background: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h3 {
+  font-weight: 600;
+  color: #333;
+}
+
+.form-control {
+  height: 45px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  height: 45px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #1976d2;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0d47a1;
+}
+
+.brand {
+  color: #1976d2;
+  font-weight: bold;
 }

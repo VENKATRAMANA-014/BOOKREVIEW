@@ -20,14 +20,14 @@ function Books() {
   const genres = [...new Set(books.map(book => book.genre))]
 
   return (
-    <div className='books-wrapper container mt-4'>
-      <h2 className='text-center mb-4'>Browse All Books</h2>
+    <div className='books-wrapper container py-5'>
+      <h2 className='text-center mb-5 fw-bold'>📚 Browse All Books</h2>
 
-      <div className='filters d-flex flex-column flex-md-row justify-content-between mb-4 gap-3'>
+      <div className='filters d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-4'>
         <input
           type='text'
           className='form-control'
-          placeholder='Search by title...'
+          placeholder='🔍 Search by title...'
           value={search}
           onChange={e => setSearch(e.target.value)}
         />
@@ -45,13 +45,17 @@ function Books() {
 
       <div className='row'>
         {filteredBooks.map(book => (
-          <div className='col-md-3 mb-4' key={book._id}>
-            <div className='card book-card h-100'>
+          <div className='col-md-3 col-sm-6 mb-4' key={book._id}>
+            <div className='card book-card h-100 shadow-sm'>
               <img src={book.image} className='card-img-top' alt={book.title} />
-              <div className='card-body'>
-                <h5 className='card-title'>{book.title}</h5>
-                <p className='card-text text-muted'>{book.author}</p>
-                <Link to={`/books/${book._id}`} className='btn btn-outline-primary btn-sm'>View</Link>
+              <div className='card-body d-flex flex-column justify-content-between'>
+                <div>
+                  <h5 className='card-title'>{book.title}</h5>
+                  <p className='card-text text-muted'>{book.author}</p>
+                </div>
+                <Link to={`/books/${book._id}`} className='btn btn-outline-primary btn-sm mt-3'>
+                  View
+                </Link>
               </div>
             </div>
           </div>

@@ -23,9 +23,15 @@ function Register() {
       <div className='form-box'>
         <h3 className='text-center mb-4'>Create Your Account</h3>
         <form onSubmit={handleSubmit}>
-          <input className='form-control mb-3' name='name' placeholder='Name' onChange={handleChange} />
-          <input className='form-control mb-3' name='email' placeholder='Email' onChange={handleChange} />
-          <input className='form-control mb-3' name='password' type='password' placeholder='Password' onChange={handleChange} />
+          <div className='mb-3'>
+            <input className='form-control' name='name' placeholder='Full Name' onChange={handleChange} />
+          </div>
+          <div className='mb-3'>
+            <input className='form-control' name='email' placeholder='Email Address' onChange={handleChange} />
+          </div>
+          <div className='mb-3'>
+            <input className='form-control' name='password' type='password' placeholder='Password' onChange={handleChange} />
+          </div>
           <button className='btn btn-success w-100'>Register</button>
         </form>
       </div>

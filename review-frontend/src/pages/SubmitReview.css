@@ -1,3 +1,39 @@
-.review-form {
-  max-width: 600px;
+.submit-review-page {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e8f5e9, #ffffff);
+  padding: 50px 15px;
+}
+
+.review-box {
+  width: 100%;
+  max-width: 550px;
+  background: #ffffff;
+  padding: 35px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.review-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.review-form select,
+.review-form textarea {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.review-form textarea {
+  resize: vertical;
+  min-height: 140px;
+  padding: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.review-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }

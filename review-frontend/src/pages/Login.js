@@ -9,7 +9,9 @@ function Login() {
   const navigate = useNavigate()
   const [form, setForm] = useState({ email: '', password: '' })
 
-  const handleChange = e => setForm({ ...form, [e.target.name]: e.target.value })
+  const handleChange = e => {
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
 
   const handleSubmit = async e => {
     e.preventDefault()
@@ -22,12 +24,33 @@ function Login() {
   return (
     <div className='login-page d-flex align-items-center justify-content-center'>
       <div className='form-box'>
-        <h3 className='text-center mb-4'>Login to BookReview</h3>
+        <h3 className='text-center mb-4'> Login to <span className="brand">BookReview</span></h3>
         <form onSubmit={handleSubmit}>
-          <input className='form-control mb-3' name='email' placeholder='Email' onChange={handleChange} />
-          <input className='form-control mb-3' name='password' type='password' placeholder='Password' onChange={handleChange} />
-          <button className='btn btn-primary w-100'>Login</button>
+          <div className='mb-3'>
+            <input
+              className='form-control'
+              name='email'
+              placeholder='Enter your email'
+              type='email'
+              required
+              onChange={handleChange}
+            />
+          </div>
+          <div className='mb-3'>
+            <input
+              className='form-control'
+              name='password'
+              type='password'
+              placeholder='Enter your password'
+              required
+              onChange={handleChange}
+            />
+          </div>
+          <button type='submit' className='btn btn-primary w-100'>Login</button>
         </form>
+        <p className='text-center mt-3 text-muted' style={{ fontSize: '0.9rem' }}>
+          Don't have an account? <a href='/register'>Register here</a>
+        </p>
       </div>
     </div>
   )

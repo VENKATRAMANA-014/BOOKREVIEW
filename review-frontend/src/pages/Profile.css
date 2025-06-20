@@ -1,3 +1,14 @@
-.profile-form {
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e8f0fe, #fff);
+  padding: 40px 15px;
+}
+
+.profile-box {
+  width: 100%;
   max-width: 500px;
+  background: white;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }

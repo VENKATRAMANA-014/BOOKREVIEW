@@ -1,13 +1,14 @@
 .register-page {
   height: 100vh;
   background: linear-gradient(to right, #fce4ec, #fff);
+  padding: 40px 15px;
 }
 
 .form-box {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   padding: 30px;
   background: #ffffff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
